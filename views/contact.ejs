@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fonts/Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d9a968462.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/stylesheets/contactstyle.css">
+</head>
+<body class="d-flex flex-column" >
+
+    <!-- navv menu -->
+    <header class="text-center py-3">
+        
+                <a href="/contact" class="font-weight-bold text-dark mx-3">Contact</a>
+                <a href="/about" class="font-weight-bold mx-3">About Me</a>
+                <a href="/projects" class="font-weight-bold mx-3">Projects</a>
+                <a href="/" class="font-weight-bold mx-3">Home</a>
+            </nav>
+    
+    </header>
+
+    <div class="container bg-primary text-white p-4 rounded mt-4" style="max-width: 75%;">
+        <form>
+            <!--name label and text field-->
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <!--email label and text field-->
+            <div class="form-group">                                                 <!--"pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"-->
+                <label for="mail" class="form-label">Email</label>                   <!--pattern requirement obtaine from "https://www.w3schools.com/tags/att_input_pattern.asp"-->
+                <input type="email" class="form-control" id="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+            </div>
+            <!--message label and text field-->
+            <div class="form-group">
+                <label for="msg" class="form-label">Message</label>
+                <textarea class="form-control" id="msg" rows="5" required></textarea>
+            </div>
+            <!-- submit button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="text-center mt-auto py-3">
+        <i class="fa-solid fa-face-smile-beam"></i>
+        <p>©2024 by Rysn YEE</p>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJTvMw2HEqE2I7Og6GFjA7rQQax5AHgGhZl27XxUQqnZf9QBs" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-a5J4N5A2RgRoTa/XBe3p9guoSZ+ZcXfZ+Frx49FdWl+GhwxR7xMyKNCa3kcxmG3p" crossorigin="anonymous"></script>
+</body>
+</html>
