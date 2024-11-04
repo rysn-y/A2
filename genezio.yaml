@@ -1,0 +1,10 @@
+frontend:
+    path: ./
+    publish: ""
+    scripts:
+        build: ""
+        deploy: ""
+    subdomain: Assign2
+name: Assign2
+region: us-east-1
+yamlVersion: 2
