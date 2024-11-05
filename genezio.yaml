@@ -1,0 +1,13 @@
+name: email-sender
+region: us-east-1
+yamlVersion: 2
+backend:
+  path: ./
+  language:
+    name: js
+    packageManager: npm
+  functions:
+    - name: sendEmail
+      path: ./
+      handler: handler
+      entry: index.mjs
